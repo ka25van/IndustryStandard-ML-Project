@@ -4,7 +4,7 @@ import pandas as pd;
 import json;  #Since MongoDb stores data in json format
 
 
-uri = "mongodb+srv://kavankaverappa5:136900@cluster1.jl2dxpz.mongodb.net/?retryWrites=true&w=majority"  #Set the pasword to numerics so you won't we needing to go through the error
+uri = "mongodb+srv://kavankaverappa5:<password>@cluster1.jl2dxpz.mongodb.net/?retryWrites=true&w=majority"  #Set the pasword to numerics so you won't we needing to go through the error
 client = pymongo.MongoClient(uri)
 
 #Collecting Data from
