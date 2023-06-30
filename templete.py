@@ -1,13 +1,14 @@
 #We can manually create files like data.py, main.py etc. But instead we can write a templete/script like this so process gets easier and this templete can be used for other projects too.
-import os
+
+import os  #provides the facility to establish the interaction between the user and the operating system.
 from pathlib import Path
-import logging
+import logging  #it means of tracking events that happen when some software runs.
 
 logging.basicConfig(
     level = logging.INFO,
     format = "[%(asctime)s: %(levelname)s]: %(message)s"
 )
-
+#Asking for project/src name
 while True:
     project_name = input("Enter your project name: ")
     if project_name !='':
@@ -15,6 +16,8 @@ while True:
 
 logging.info(f"Creating project by name: {project_name}")
 
+
+#These files must be present 
 list_of_files = [
     ".github/workflows/.gitkeep",
     ".github/workflows/main.yaml",
