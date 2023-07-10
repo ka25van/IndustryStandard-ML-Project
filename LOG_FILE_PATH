@@ -1,2 +1,11 @@
-[2023-06-30 11:38:01,436] root - INFO - Start logging
-[2023-06-30 11:38:01,436] root - DEBUG - Exception
+[2023-07-10 13:15:14,112] root - INFO - Exporting collection data as pandas dataframe
+[2023-07-10 13:15:14,112] root - INFO - Reading data from database: Insurance, Collection: Insurance_Info
+[2023-07-10 13:15:19,218] root - INFO - Finding columns: Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[2023-07-10 13:15:19,218] root - INFO - Drop columns: _id
+[2023-07-10 13:15:19,218] root - INFO - Rows and columns after dropping :(4014, 7)
+[2023-07-10 13:15:19,218] root - INFO - Save data in feature store
+[2023-07-10 13:15:19,218] root - INFO - Create feature store folder if not available
+[2023-07-10 13:15:19,227] root - INFO - Save df to feature store folder
+[2023-07-10 13:15:19,243] root - INFO - split dataset into train and test set
+[2023-07-10 13:15:19,243] root - INFO - create dataset directory folder if not available
+[2023-07-10 13:15:19,243] root - INFO - Save df to feature store folder
