@@ -41,5 +41,11 @@ class DataIngestionConfig:
         except Exception  as e:
             raise InsuranceException(e,sys)   
 
-class DataValidation:
-    pass
+class DataValidationConfig:
+    def __init__(self,training_pipeline_config:TrainingPipelineConfig):
+        self.data_validation_dir=os.path.join(training_pipeline_config.artifact_dir, "data_validation")
+#since this is for validation, we need to create a report file where we can see the validated data
+        self.report_file_path=os.path.join(self.data_validation_dir, "report.yaml")  #yaml/json/csv any format can be used
+        self.missing_threshold:float=0.2 #for 20% of data to be dropped
+        self.base_file_path=os.path.join("insurance.csv")
+        
