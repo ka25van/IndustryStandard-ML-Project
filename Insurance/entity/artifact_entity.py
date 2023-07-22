@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-import os, sys
+
 
 
 #Here we are declaring in which format we must recieve the file
@@ -13,3 +13,27 @@ class DataIngestionArtifact:
 @dataclass
 class DataValidationArtifact:
     report_file_path:str
+
+@dataclass
+class DataTransformationArtifact:
+    transform_object_path:str
+    transformed_train_path:str
+    transformed_test_path:str
+    target_encoder_path:str
+
+
+@dataclass
+class ModelTrainerArtifact:
+    model_path:str 
+    r2_train_score:float 
+    r2_test_score:float
+
+@dataclass
+class ModelEvaluationArtifact:
+    is_model_accepted:bool
+    improved_accuracy:float
+
+@dataclass
+class ModelPusherArtifact:
+    pusher_model_dir: str
+    saved_model_dir: str

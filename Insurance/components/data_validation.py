@@ -37,8 +37,7 @@ class DataValidation:
             # finding the null values
             null_report = df.isna().sum()/df.shape[0]
 
-            logging.info(
-                f"selecting column name which contains null above to {threshold}")
+            logging.info(f"selecting column name which contains null above to {threshold}")
             # we get the null values from the null report
             drop_column_names = null_report[null_report > threshold].index
 
@@ -64,8 +63,8 @@ class DataValidation:
     def is_required_columns_exists(self, base_df: pd.DataFrame, current_df: pd.DataFrame, report_key_name: str) -> bool:
         try:
             # comparing the columns from base dataset(insurance.csv) and with the test/train.csv i.e(current)and removing the columns that is not required
-            base_columns = base_df
-            current_columns = current_df
+            base_columns = base_df.columns
+            current_columns = current_df.columns
 
             missing_columns = []  # creating an empty list
             for base_column in base_columns:

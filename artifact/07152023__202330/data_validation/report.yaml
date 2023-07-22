@@ -1,0 +1,11 @@
+data_drift_within_test_dataset:
+  expenses:
+    pvalues: 0.6748201509413412
+    same_distribution: true
+data_drift_within_train_dataset:
+  expenses:
+    pvalues: 0.999999969613246
+    same_distribution: true
+missing_values_within_base_dataset: []
+missing_values_within_test_dataset: []
+missing_values_within_train_dataset: []

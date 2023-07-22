@@ -14,5 +14,5 @@ class EnvironmentVariable:
 
 env_var=EnvironmentVariable()
 mongo_client = pymongo.MongoClient(env_var.mongo_db_url)
-TARGET_COLUMN="bmi"            #Targeting a specific column
+TARGET_COLUMN="expenses"            #Targeting a specific column
 print(env_var.mongo_db_url)
