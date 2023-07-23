@@ -1,48 +1,48 @@
-[2023-07-21 16:33:41,511] root - INFO - Exporting collection data as pandas dataframe
-[2023-07-21 16:33:41,511] root - INFO - Reading data from database: Insurance, Collection: Insurance_Info
-[2023-07-21 16:33:47,976] root - INFO - Finding columns: Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
-[2023-07-21 16:33:47,976] root - INFO - Drop columns: _id
-[2023-07-21 16:33:47,978] root - INFO - Rows and columns after dropping :(4014, 7)
-[2023-07-21 16:33:47,978] root - INFO - Save data in feature store
-[2023-07-21 16:33:47,978] root - INFO - Create feature store folder if not available
-[2023-07-21 16:33:47,983] root - INFO - Save df to feature store folder
-[2023-07-21 16:33:48,015] root - INFO - split dataset into train and test set
-[2023-07-21 16:33:48,015] root - INFO - create dataset directory folder if not available
-[2023-07-21 16:33:48,015] root - INFO - Save df to feature store folder
-[2023-07-21 16:33:48,047] root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07212023__163341\\data_ingestion\\feature_store\\insurance.csv', train_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07212023__163341\\data_ingestion\\train_data\\train.csv', test_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07212023__163341\\data_ingestion\\test_data\\test.csv')
-[2023-07-21 16:33:48,047] root - INFO - Reading base dataframe
-[2023-07-21 16:33:48,055] root - INFO - Replace na value in base df
-[2023-07-21 16:33:48,055] root - INFO - Drop null values colums from base df
-[2023-07-21 16:33:48,055] root - INFO - selecting column name which contains null above to 0.2
-[2023-07-21 16:33:48,055] root - INFO - Columns to drop: []
-[2023-07-21 16:33:48,055] root - INFO - Reading train dataframe
-[2023-07-21 16:33:48,087] root - INFO - Reading test dataframe
-[2023-07-21 16:33:48,111] root - INFO - selecting column name which contains null above to 0.2
-[2023-07-21 16:33:48,111] root - INFO - Columns to drop: []
-[2023-07-21 16:33:48,111] root - INFO - selecting column name which contains null above to 0.2
-[2023-07-21 16:33:48,111] root - INFO - Columns to drop: []
-[2023-07-21 16:33:48,124] root - INFO - Is all required columns present in train df
-[2023-07-21 16:33:48,124] root - INFO - Is all required columns present in test df
-[2023-07-21 16:33:48,124] root - INFO - As all column are available in train df hence detecting data drift
-[2023-07-21 16:33:48,160] root - INFO - As all column are available in test df hence detecting data drift
-[2023-07-21 16:33:48,175] root - INFO - Write report in yaml file
-[2023-07-21 16:33:48,179] root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07212023__163341\\data_validation\\report.yaml')
-[2023-07-21 16:33:48,215] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[2023-07-21 16:33:48,215] root - INFO - Loading train and test array.
-[2023-07-21 16:33:48,246] root - INFO - Splitting input and target feature from both train and test arr.
-[2023-07-21 16:33:48,246] root - INFO - Train the model
-[2023-07-21 16:33:48,246] root - INFO - Calculating f1 train score
-[2023-07-21 16:33:48,246] root - INFO - Calculating f1 test score
-[2023-07-21 16:33:48,246] root - INFO - train score:0.7516963695386237 and tests score 0.746484155493367
-[2023-07-21 16:33:48,246] root - INFO - Checking if our model is underfitting or not
-[2023-07-21 16:33:48,246] root - INFO - Checking if our model is overfiiting or not
-[2023-07-21 16:33:48,246] root - INFO - Saving model object
-[2023-07-21 16:33:48,246] root - INFO - Prepare the artifact
-[2023-07-21 16:33:48,246] root - INFO - Model trainer artifact: ModelTrainerArtifact(model_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07212023__163341\\model_trainer\\model\\model.pkl', r2_train_score=0.7516963695386237, r2_test_score=0.746484155493367)
-[2023-07-21 16:33:48,246] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[2023-07-21 16:33:48,246] root - INFO - if saved model folder has model then we will compare which model is best trained or the model from saved model folder
-[2023-07-21 16:33:48,246] root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=None)
-[2023-07-21 16:33:48,246] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[2023-07-21 16:33:48,246] root - INFO - Loading transformer model and target encoder
-[2023-07-21 16:33:48,262] root - INFO - Saving model into model pusher directory
-[2023-07-21 16:33:48,262] root - INFO - Saving model in saved model dir
+[2023-07-23 10:38:55,240] root - INFO - Exporting collection data as pandas dataframe
+[2023-07-23 10:38:55,240] root - INFO - Reading data from database: Insurance, Collection: Insurance_Info
+[2023-07-23 10:39:01,323] root - INFO - Finding columns: Index(['_id', 'age', 'sex', 'bmi', 'children', 'smoker', 'region', 'expenses'], dtype='object')
+[2023-07-23 10:39:01,328] root - INFO - Drop columns: _id
+[2023-07-23 10:39:01,334] root - INFO - Rows and columns after dropping :(4014, 7)
+[2023-07-23 10:39:01,334] root - INFO - Save data in feature store
+[2023-07-23 10:39:01,336] root - INFO - Create feature store folder if not available
+[2023-07-23 10:39:01,336] root - INFO - Save df to feature store folder
+[2023-07-23 10:39:01,368] root - INFO - split dataset into train and test set
+[2023-07-23 10:39:01,368] root - INFO - create dataset directory folder if not available
+[2023-07-23 10:39:01,368] root - INFO - Save df to feature store folder
+[2023-07-23 10:39:01,395] root - INFO - Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07232023__103855\\data_ingestion\\feature_store\\insurance.csv', train_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07232023__103855\\data_ingestion\\train_data\\train.csv', test_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07232023__103855\\data_ingestion\\test_data\\test.csv')
+[2023-07-23 10:39:01,400] root - INFO - Reading base dataframe
+[2023-07-23 10:39:01,405] root - INFO - Replace na value in base df
+[2023-07-23 10:39:01,405] root - INFO - Drop null values colums from base df
+[2023-07-23 10:39:01,405] root - INFO - selecting column name which contains null above to 0.2
+[2023-07-23 10:39:01,409] root - INFO - Columns to drop: []
+[2023-07-23 10:39:01,409] root - INFO - Reading train dataframe
+[2023-07-23 10:39:01,424] root - INFO - Reading test dataframe
+[2023-07-23 10:39:01,449] root - INFO - selecting column name which contains null above to 0.2
+[2023-07-23 10:39:01,449] root - INFO - Columns to drop: []
+[2023-07-23 10:39:01,449] root - INFO - selecting column name which contains null above to 0.2
+[2023-07-23 10:39:01,457] root - INFO - Columns to drop: []
+[2023-07-23 10:39:01,457] root - INFO - Is all required columns present in train df
+[2023-07-23 10:39:01,457] root - INFO - Is all required columns present in test df
+[2023-07-23 10:39:01,457] root - INFO - As all column are available in train df hence detecting data drift
+[2023-07-23 10:39:01,493] root - INFO - As all column are available in test df hence detecting data drift
+[2023-07-23 10:39:01,506] root - INFO - Write report in yaml file
+[2023-07-23 10:39:01,512] root - INFO - Data validation artifact: DataValidationArtifact(report_file_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07232023__103855\\data_validation\\report.yaml')
+[2023-07-23 10:39:01,545] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-07-23 10:39:01,545] root - INFO - Loading train and test array.
+[2023-07-23 10:39:01,572] root - INFO - Splitting input and target feature from both train and test arr.
+[2023-07-23 10:39:01,572] root - INFO - Train the model
+[2023-07-23 10:39:01,592] root - INFO - Calculating f1 train score
+[2023-07-23 10:39:01,592] root - INFO - Calculating f1 test score
+[2023-07-23 10:39:01,592] root - INFO - train score:0.7516963695386237 and tests score 0.746484155493367
+[2023-07-23 10:39:01,592] root - INFO - Checking if our model is underfitting or not
+[2023-07-23 10:39:01,592] root - INFO - Checking if our model is overfiiting or not
+[2023-07-23 10:39:01,592] root - INFO - Saving model object
+[2023-07-23 10:39:01,603] root - INFO - Prepare the artifact
+[2023-07-23 10:39:01,603] root - INFO - Model trainer artifact: ModelTrainerArtifact(model_path='C:\\Users\\Kaverappa Mapanamada\\Desktop\\DataSciencePractice\\ML-IndustryStand\\IndustryStandard-ML-Project\\artifact\\07232023__103855\\model_trainer\\model\\model.pkl', r2_train_score=0.7516963695386237, r2_test_score=0.746484155493367)
+[2023-07-23 10:39:01,603] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  Model Evaluation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-07-23 10:39:01,603] root - INFO - if saved model folder has model then we will compare which model is best trained or the model from saved model folder
+[2023-07-23 10:39:01,605] root - INFO - Model evaluation artifact: ModelEvaluationArtifact(is_model_accepted=True, improved_accuracy=None)
+[2023-07-23 10:39:01,605] root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-07-23 10:39:01,605] root - INFO - Loading transformer model and target encoder
+[2023-07-23 10:39:01,607] root - INFO - Saving model into model pusher directory
+[2023-07-23 10:39:01,616] root - INFO - Saving model in saved model dir
